@@ -1,14 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UpcomingFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".upcoming.UpcomingFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.example.surfthirdlessonhomework.ui.LaunchView
+        android:id="@+id/launchView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Upcoming" />
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="32dp"
+        app:image_res="@drawable/falcon_9"
+        app:title="Starlink 2"
+        app:description="CCAES SLC 40"
+        app:date="16-10-2016"
+        />
 
-</FrameLayout>
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/launchView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/launchView"
+        app:layout_constraintEnd_toEndOf="@+id/launchView"
+        android:layout_marginTop="53dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                style="@style/TitleTextViewStyle"
+                android:text="LAUCNCH DATE"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                style="@style/UpcomingInfoTextViewStyle"
+                android:text="Thu Oct 17 5:30:00 2019"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="16dp"
+                style="@style/TitleTextViewStyle"
+                android:text="LAUNCH SITE"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                style="@style/UpcomingInfoTextViewStyle"
+                android:text="Cape Canaveral Air Force Station Space Launch Complex 40"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="16dp"
+                style="@style/TitleTextViewStyle"
+                android:text="COUNT DOWN"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                style="@style/UpcomingInfoTextViewStyle"
+                android:text="5 Hrs 30mins more..."/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

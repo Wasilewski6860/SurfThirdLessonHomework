@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="launches_space">20dp</dimen>
+    <dimen name="item_space_left">23dp</dimen>
+    <dimen name="item_space_right">32dp</dimen>
+    <dimen name="item_space_space">17dp</dimen>
+    <dimen name="rockets_space">17dp</dimen>
+
+    <dimen name="title_dimension">10sp</dimen>
+    <dimen name="normal_text_dimansion">16sp</dimen>
+    <dimen name="big_text_dimension">18sp</dimen>
+    <dimen name="card_text_dimension">12sp</dimen>
+</resources>

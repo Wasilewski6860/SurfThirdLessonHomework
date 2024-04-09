@@ -15,6 +15,36 @@
         <item name="navigationIconTint">@color/white</item>
     </style>
 
+
+
+    <style name="BaseTextViewStyle">
+        <item name="android:fontFamily">@font/google_sans_regular</item>
+    </style>
+
+    <style name="UpcomingInfoTextViewStyle" parent="BaseTextViewStyle">
+        <item name="android:textSize">@dimen/normal_text_dimansion</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">11dp</item>
+
+    </style>
+
+    <style name="TitleTextViewStyle" parent="BaseTextViewStyle">
+        <item name="android:textSize">@dimen/title_dimension</item>
+        <item name="android:textColor">@color/colorPink</item>
+    </style>
+
+    <style name="CardNameTextViewStyle" parent="BaseTextViewStyle">
+        <item name="android:fontFamily">@font/google_sans_bold</item>
+        <item name="android:textSize">@dimen/big_text_dimension</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="CardTextTextViewStyle" parent="BaseTextViewStyle">
+        <item name="android:textSize">@dimen/card_text_dimension</item>
+        <item name="android:textColor">@color/colorGrey</item>
+    </style>
+
+
     <style name="ToolbarTextViewStyle">
         <item name="android:fontFamily">@font/google_sans_bold</item>
         <item name="android:textColor">@color/white</item>
