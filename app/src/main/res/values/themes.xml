@@ -3,7 +3,40 @@
     <style name="Base.Theme.SurfThirdLessonHomework" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/colorWindowBackground</item>
     </style>
 
     <style name="Theme.SurfThirdLessonHomework" parent="Base.Theme.SurfThirdLessonHomework" />
+
+    <style name="MyToolbarStyle" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:background">@color/colorWindowBackground</item>
+        <item name="navigationIconTint">@color/white</item>
+    </style>
+
+    <style name="ToolbarTextViewStyle">
+        <item name="android:fontFamily">@font/google_sans_bold</item>
+        <item name="android:textColor">@color/white</item>
+
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MyTabLayoutStyle" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabIndicator">@null</item>
+        <item name="tabIndicatorColor">@null</item>
+
+        <item name="tabTextColor">@color/colorGrey</item>
+        <item name="tabSelectedTextColor">@color/colorPink</item>
+    </style>
+
+    <style name="MyTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/google_sans_regular</item>
+
+        <item name="android:textColor">@color/colorGrey</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
 </resources>
